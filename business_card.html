@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>business_card</title>
+  <style>
+    body {
+      font-family: 'Microsoft JhengHei',
+    }
+
+    #left {
+      min-height: 360px;
+      background: url(./k.png)center/cover;
+    }
+
+    .position-absolute:first-child {
+      background: url(./corner.png);
+      left: 25px;
+      bottom: 25px;
+      height: 250px;
+      width: 250px;
+      filter: drop-shadow(.5rem -0.5rem .5rem rgba(0, 0, 0, 0.034));
+    }
+
+    .position-absolute:last-child {
+      background: url(./corner.png);
+      right: 25px;
+      top: 25px;
+      height: 250px;
+      width: 250px;
+      filter: drop-shadow(.5rem -0.5rem .5rem rgba(0, 0, 0, 0.034));
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="position-relative p-md-5 overflow-hidden mx-md-auto mx-0">
+    <div class="position-absolute d-md-block d-none"></div>
+    <div class="row m-md-5 shadow mx-0 overflow-hidden flex-md-nowrap">
+      <div id="left" class="col-md-4 col-12"></div>
+      <div class="col-md-8 col-12 ps-5 pt-5 pb-5">
+        <div class="w-75 m-auto ps-5 pt-5">
+          <span class="h4">Front-End Designer</span><br>
+          <h1 class="display-3">AKing Kuo</h1>
+          <span class="fw-bold fs-4" style="letter-spacing: 1rem">泰山職訓局</span><br>
+          <ul class="list-unstyled" style="margin-top: 2rem">
+            <li class="fs-5">地址：新北市板橋區大智街298號</li>
+            <li class="fs-5">電話：0977558833</li>
+            <li class="fs-5">E-Mail：kuo271013@gmail.com</li>
+            <li class="fs-5 ">網址：<a class="text-decoration-none text-reset"
+                href="https://github.com/leo271013">https://github.com/leo271013</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="position-absolute d-md-block d-none"></div>
+  </div>
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
